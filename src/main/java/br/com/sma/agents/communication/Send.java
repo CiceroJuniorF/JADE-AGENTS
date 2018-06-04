@@ -20,7 +20,7 @@ public class Send extends Agent {
 
 			public void action() {
 				ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-				msg.setContent("#####Hello, how are you?#### ");
+				msg.setContent(myAgent.getLocalName() +"\n     #####Hello, how are you?#### ");
 				msg.addReceiver(new AID("receive", AID.ISLOCALNAME));
 				send(msg);
 				ACLMessage recebido = receive();
@@ -32,10 +32,10 @@ public class Send extends Agent {
 							+     recebido.getContent() + "   \n"
 							+ "   from      " 
 							+     recebido.getSender().getName()
-							+ "\n========================================================================\n");
+							+ "\n==============================================================================\n");
 					ACLMessage reply = recebido.createReply();
 					reply.setPerformative(ACLMessage.INFORM);
-					reply.setContent(myAgent.getLocalName() +"\n#####I fine too!!####");
+					reply.setContent(myAgent.getLocalName() +"   \n     #####I fine too!!####");
 					send(reply);
 					
 					

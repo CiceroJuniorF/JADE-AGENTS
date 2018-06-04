@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.sma</groupId>
@@ -11,12 +11,12 @@
 	<name>sma</name>
 	<description>Demo project for Spring Boot</description>
 
-	<parent>
+	<!-- <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.2.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
+		<relativePath /> 
+	</parent> -->
 	<!-- JadeRepository -->
 
 	<properties>
@@ -34,11 +34,11 @@
 
 	<dependencies>
 		<!-- Mysql -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency> -->
 		<!-- Jade -->
 		<dependency>
 			<groupId>com.tilab.jade</groupId>
@@ -50,12 +50,17 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-plugin-plugin</artifactId>
+				<version>3.5.2</version>
+				<configuration>
+					<goalPrefix>plugin</goalPrefix>
+					<outputDirectory>target/dir</outputDirectory>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<!-- Config Jade Main -->
 	<profiles>
 		<profile>

@@ -29,11 +29,11 @@ public class Receive extends Agent {
 							+     recebido.getContent() + "   \n"
 							+ "   from      " 
 							+     recebido.getSender().getName()
-							+ "\n========================================================================\n");
+							+ "\n==============================================================================\n");
 					ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
 					
 					//Response
-					msg.setContent(myAgent.getLocalName() +"\n #####I'm fine!!! And you?#######");
+					msg.setContent(myAgent.getLocalName() +"\n      #####I'm fine!!! And you?#######");
 					msg.addReceiver(new AID("send", AID.ISLOCALNAME));
 					send(msg);
 				}
