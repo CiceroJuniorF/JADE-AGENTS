@@ -11,18 +11,11 @@
 	<name>sma</name>
 	<description>Demo project for Spring Boot</description>
 
-	<!-- <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.2.RELEASE</version>
-		<relativePath /> 
-	</parent> -->
-	<!-- JadeRepository -->
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 	<repositories>
 		<!-- JADEREPOSITORY -->
@@ -47,19 +40,21 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-plugin-plugin</artifactId>
-				<version>3.5.2</version>
-				<configuration>
-					<goalPrefix>plugin</goalPrefix>
-					<outputDirectory>target/dir</outputDirectory>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	<!-- <build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-plugin-plugin</artifactId>
+					<version>3.5.2</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build> -->
 
 	<!-- Config Jade Main -->
 	<profiles>

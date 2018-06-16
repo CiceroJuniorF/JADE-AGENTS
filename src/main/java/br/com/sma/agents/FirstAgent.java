@@ -1,5 +1,6 @@
 package br.com.sma.agents;
 
+import br.com.sma.dictionary.Conversation;
 import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
@@ -15,7 +16,7 @@ public class FirstAgent extends Agent {
 				msg.addReceiver(new AID("first-agent",AID.ISLOCALNAME));
 				msg.setLanguage("Português");
 				msg.setOntology("TEMPO");
-				msg.setContent("Hello i'm the first agent.");
+				msg.setContent(Conversation.talkKey("Hello how are you?"));
 				send(msg);				
 				System.out.println("Agente: "+myAgent.getName()+"  "+msg.getContent());
 			}
