@@ -1,0 +1,298 @@
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:55]-(BuyerAgent:97)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529202235050
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:56]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202235050
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:56]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202235050
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:56]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202235050
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:56]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:56]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:56]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:23:58]-(BuyerAgent:52)  -> Best propose 100.00 from merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:24:01]-(BuyerAgent:52)  -> Best propose 15.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:24:04]-(BuyerAgent:52)  -> Best propose 5.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:11]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:14]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:14]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:14]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:14]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529202494207
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:15]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202494207
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:15]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202494207
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:15]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202494207
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:15]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:15]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:15]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:17]-(BuyerAgent:53)  -> Best propose 5.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:48]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:51]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:51]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:51]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:51]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529202531969
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:53]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202531969
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:53]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202531969
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:53]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202531969
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:53]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:53]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:53]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:28:54]-(BuyerAgent:53)  -> Best propose 15.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:00]-(BuyerAgent:53)  -> Best propose 5.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:03]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:03]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:03]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:03]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529202543998
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:04]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202543998
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:04]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202543998
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:04]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:04]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:04]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202543998
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:04]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:07]-(BuyerAgent:66)  -> SEND ORDER!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:07]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202547001
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:07]-(MerchantAgent:45)  -> Agent merchant-extra INFORM - > {"name":"Arroz","type":"Tio João","price":5.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:29:10]-(BuyerAgent:75)  -> {"name":"Arroz","type":"Tio João","price":5.00}
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:29]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529202692313
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202692313
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202692313
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:32]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:33]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202692313
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:33]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:35]-(BuyerAgent:53)  -> Best propose 5.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529202704323
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202704323
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202704323
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202704323
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:44]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:47]-(BuyerAgent:66)  -> SEND ORDER!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:47]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529202707328
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:47]-(MerchantAgent:45)  -> Agent merchant-extra INFORM - > {"name":"Arroz","type":"Tio João","price":5.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:31:50]-(BuyerAgent:75)  -> Agent buyerBUY: {"name":"Arroz","type":"Tio João","price":5.00} FROM: merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:20]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:23]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:23]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:23]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:23]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529203043259
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:24]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203043259
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:24]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203043259
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:24]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203043259
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:24]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:24]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:24]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:26]-(BuyerAgent:53)  -> Best propose 100.00 from merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:29]-(BuyerAgent:53)  -> Best propose 15.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:32]-(BuyerAgent:53)  -> Best propose 5.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Arroz
+ ID:Arxjolito1529203055284
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203055284
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203055284
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203055284
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 15.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 5.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:35]-(MerchantAgent:52)  -> Agent merchant-dia PROPOSE - > 100.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:38]-(BuyerAgent:66)  -> SEND ORDER!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:38]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Arroz
+FOR: buyer
+ID:Arxjolito1529203058292
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:38]-(MerchantAgent:45)  -> Agent merchant-extra INFORM - > {"name":"Arroz","type":"Tio João","price":5.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:37:41]-(BuyerAgent:75)  -> Agent buyerBUY: {"name":"Arroz","type":"Tio João","price":5.00} FROM: merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:00]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:02]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:02]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:02]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:02]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Feijão
+ ID:Fexjolito1529203202974
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:04]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203202974
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:04]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203202974
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:04]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203202974
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:04]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 10.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:04]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 20.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:08]-(BuyerAgent:53)  -> Best propose 10.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(BuyerAgent:85)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(BuyerAgent:85)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(BuyerAgent:85)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(BuyerAgent:98)  -> SEND:
+Agent: buyer
+CFP CONTENT => Feijão
+ ID:Fexjolito1529203215005
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(MerchantAgent:32)  -> Agent merchant-dia received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203215005
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203215005
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(MerchantAgent:32)  -> Agent merchant-extra received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203215005
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(MerchantAgent:52)  -> Agent merchant-carrefour PROPOSE - > 10.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:15]-(MerchantAgent:52)  -> Agent merchant-extra PROPOSE - > 20.00
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:24]-(BuyerAgent:66)  -> SEND ORDER!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:24]-(MerchantAgent:32)  -> Agent merchant-carrefour received the menssage 
+-Feijão
+FOR: buyer
+ID:Fexjolito1529203224015
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:24]-(MerchantAgent:45)  -> Agent merchant-carrefour INFORM - > {"name":"Feijão","type":"Kicaldo","price":10.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 16/06/2018 23:40:27]-(BuyerAgent:75)  -> Agent buyerBUY: {"name":"Feijão","type":"Kicaldo","price":10.00} FROM: merchant-carrefour
