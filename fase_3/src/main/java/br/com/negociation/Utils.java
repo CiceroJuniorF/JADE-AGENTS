@@ -1,14 +1,11 @@
 package br.com.negociation;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
-
-import br.com.negociation.agents.BuyerAgent;
 
 /**
  * Util

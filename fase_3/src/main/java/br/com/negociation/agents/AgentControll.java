@@ -1,28 +1,30 @@
 package br.com.negociation.agents;
 
-import javax.swing.JPanel;
-
 import org.apache.log4j.Logger;
 
-import br.com.negociation.Tabuleiro;
-import br.com.negociation.Tabuleiro_1;
-import br.com.negociation.Tela1;
 import br.com.negociation.Utils;
+import br.com.negociation.containers.MainContainer;
+import br.com.negociation.simulator.MainScreen;
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
+import jade.wrapper.AgentController;
+import jade.wrapper.StaleProxyException;
 
 public class AgentControll extends Agent {
 	private static final long serialVersionUID = 1L;
 
 	private static Logger logger = Logger.getLogger(AgentControll.class);
+	private boolean isActive = false;
 
 	protected void setup() {
 		this.addBehaviour(new OneShotBehaviour() {
 			private static final long serialVersionUID = 1L;
-
+			
 			public void action() {
 				String log = "\n";
-				Tela1.getInstance().setVisible(true);
+				MainScreen.getInstance().setVisible(true);
+				MainScreen.getInstance().repaint();
+				MainScreen.getInstance().validate();
 				for (String agents : Utils.allAgents()) {
 					if (agents != null)
 						log += "\n|" + agents + "|\n";
@@ -32,19 +34,20 @@ public class AgentControll extends Agent {
 
 				
 
-				JPanel contentPane = (JPanel) Tela1.getInstance().getContentPane();
+				// JPanel contentPane = (JPanel) Tela1.getInstance().getContentPane();
 
-				contentPane.removeAll();
-				Tabuleiro retangulo = new Tabuleiro();				
-				retangulo.newRectangle(1,1,100,100);
-				retangulo.newRectangle(100,100,100,100);
-				retangulo.newRectangle(1,100,100,100);
-				retangulo.newRectangle(100,1,100,100);
-				retangulo.newRectangle(200,1,100,100);
-				retangulo.newRectangle(200,100,100,100);
-				contentPane.add(retangulo);
-				contentPane.repaint();
-				contentPane.validate();
+				// contentPane.removeAll();
+				// Tabuleiro retangulo = new Tabuleiro();
+				// contentPane.add(retangulo);
+				// contentPane.repaint();
+				// contentPane.validate();
+				// AgentController rma = null;
+				// try {
+				// 	rma = MainContainer.getInstance().createNewAgent("goku", "br.com.negociation.agents.AgentTest", new Object[0]);
+				// 	rma.start();
+				// } catch (StaleProxyException e) {
+				// 	e.printStackTrace();
+				// }
 			}
 
 		});
