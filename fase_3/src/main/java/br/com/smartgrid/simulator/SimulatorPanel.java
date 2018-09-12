@@ -1,4 +1,4 @@
-package br.com.negociation.simulator;
+package br.com.smartgrid.simulator;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -6,7 +6,7 @@ import java.awt.GridLayout;
 
 import javax.swing.JPanel;
 
-import br.com.negociation.simulator.agentsPanel.IniciadorPanel;
+import br.com.smartgrid.simulator.agentsPanel.IniciadorPanel;
 
 /**
  * SimulatorPane

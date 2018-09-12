@@ -1,6 +1,6 @@
-package br.com.negociation;
+package br.com.smartgrid;
 
-import br.com.negociation.containers.MainContainer;
+import br.com.smartgrid.containers.MainContainer;
 import jade.Boot;
 import jade.wrapper.AgentController;
 import jade.wrapper.StaleProxyException;
@@ -14,7 +14,7 @@ public class Main extends Boot {
    
         AgentController rma = null;
         try {
-            rma = MainContainer.getInstance().createNewAgent("control", "br.com.negociation.agents.AgentControll", new Object[0]);
+            rma = MainContainer.getInstance().createNewAgent("control", "br.com.smartgrid.agents.AgentControll", new Object[0]);
             rma.start();
         } catch (StaleProxyException e) {
             e.printStackTrace();

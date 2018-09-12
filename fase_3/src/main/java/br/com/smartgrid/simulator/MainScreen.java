@@ -1,4 +1,4 @@
-package br.com.negociation.simulator;
+package br.com.smartgrid.simulator;
 
 import java.awt.Color;
 import java.awt.FlowLayout;

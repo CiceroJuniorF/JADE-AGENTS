@@ -3,13 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>br.com.negociation</groupId>
-	<artifactId>negociation-agents</artifactId>
+	<groupId>br.com.smartgrid</groupId>
+	<artifactId>smartgrid-agents</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>sma</name>
-	<description>Project SMA negociation.</description>
+	<description>Project SMA smartgrid.</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -56,7 +56,7 @@
 						<artifactId>exec-maven-plugin</artifactId>
 						<version>1.3.2</version>
 						<configuration>
-							<mainClass>br.com.negociation.Main</mainClass>
+							<mainClass>br.com.smartgrid.Main</mainClass>
 							<arguments>
 								<argument>-conf</argument>
 								<argument>src/main/resources/jade-main-container.properties</argument>

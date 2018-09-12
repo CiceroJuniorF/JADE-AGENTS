@@ -1,4 +1,4 @@
-package br.com.negociation;
+package br.com.smartgrid;
 
 import java.io.InputStream;
 import java.util.ArrayList;

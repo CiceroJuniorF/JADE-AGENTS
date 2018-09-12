@@ -1,10 +1,10 @@
-package br.com.negociation.agents;
+package br.com.smartgrid.agents;
 
 import org.apache.log4j.Logger;
 
-import br.com.negociation.Utils;
-import br.com.negociation.containers.MainContainer;
-import br.com.negociation.simulator.MainScreen;
+import br.com.smartgrid.Utils;
+import br.com.smartgrid.containers.MainContainer;
+import br.com.smartgrid.simulator.MainScreen;
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.wrapper.AgentController;
@@ -32,8 +32,6 @@ public class AgentControll extends Agent {
 
 				logger.info("\nThe following agents have been created ->>>>>>>" + log);
 
-				
-
 				// JPanel contentPane = (JPanel) Tela1.getInstance().getContentPane();
 
 				// contentPane.removeAll();
@@ -41,13 +39,13 @@ public class AgentControll extends Agent {
 				// contentPane.add(retangulo);
 				// contentPane.repaint();
 				// contentPane.validate();
-				// AgentController rma = null;
-				// try {
-				// 	rma = MainContainer.getInstance().createNewAgent("goku", "br.com.negociation.agents.AgentTest", new Object[0]);
-				// 	rma.start();
-				// } catch (StaleProxyException e) {
-				// 	e.printStackTrace();
-				// }
+				AgentController rma = null;
+				try {
+					rma = MainContainer.getInstance().createNewAgent("iniciador", "br.com.smartgrid.agents.AgentIniciador", new Object[0]);
+					rma.start();
+				} catch (StaleProxyException e) {
+					e.printStackTrace();
+				}
 			}
 
 		});

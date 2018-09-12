@@ -1,9 +1,9 @@
-package br.com.negociation.agents;
+package br.com.smartgrid.agents;
 
 import org.apache.log4j.Logger;
 
-import br.com.negociation.simulator.agentsPanel.IniciadorPanel;
-import br.com.negociation.simulator.agentsPanel.status.On;
+import br.com.smartgrid.simulator.agentsPanel.IniciadorPanel;
+import br.com.smartgrid.simulator.agentsPanel.status.On;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 

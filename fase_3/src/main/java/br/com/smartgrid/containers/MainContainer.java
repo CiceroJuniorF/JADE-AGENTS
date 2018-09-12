@@ -1,4 +1,4 @@
-package br.com.negociation.containers;
+package br.com.smartgrid.containers;
 
 import jade.core.Profile;
 import jade.core.ProfileImpl;

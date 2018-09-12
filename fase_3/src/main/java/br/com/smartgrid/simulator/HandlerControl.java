@@ -1,4 +1,4 @@
-package br.com.negociation.simulator;
+package br.com.smartgrid.simulator;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

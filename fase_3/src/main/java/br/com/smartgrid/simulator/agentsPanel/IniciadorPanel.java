@@ -1,4 +1,4 @@
-package br.com.negociation.simulator.agentsPanel;
+package br.com.smartgrid.simulator.agentsPanel;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -8,9 +8,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import br.com.negociation.containers.MainContainer;
-import br.com.negociation.simulator.agentsPanel.status.Of;
-import br.com.negociation.simulator.agentsPanel.status.On;
+import br.com.smartgrid.containers.MainContainer;
+import br.com.smartgrid.simulator.agentsPanel.status.Of;
+import br.com.smartgrid.simulator.agentsPanel.status.On;
 import jade.wrapper.AgentController;
 import jade.wrapper.StaleProxyException;
 
@@ -38,7 +38,7 @@ public class IniciadorPanel extends JPanel {
         add(status);
         AgentController rma = null;
         try {
-            rma = MainContainer.getInstance().createNewAgent("iniciador", "br.com.negociation.agents.AgentIniciador",
+            rma = MainContainer.getInstance().createNewAgent("iniciador", "br.com.smartgrid.agents.AgentIniciador",
                     new Object[0]);
             rma.start();
         } catch (StaleProxyException e) {

@@ -1,6 +1,6 @@
-package br.com.negociation.simulator;
+package br.com.smartgrid.simulator;
 
-import br.com.negociation.simulator.agentsPanel.IniciadorPanel;
+import br.com.smartgrid.simulator.agentsPanel.IniciadorPanel;
 
 /**
  * CreateSimulator
