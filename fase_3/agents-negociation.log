@@ -331,3 +331,63 @@ The following agents have been created ->>>>>>>
  :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
  :content  "DONE!" 
  :reply-with  buyer@172.26.75.113:10099/JADE1536522135004  :in-reply-to  cfp1536522134972  :conversation-id  Accfp1536522134972 )
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:20:20]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:21:11]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:21:36]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:21:57]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:22:31]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:22:50]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:23:20]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:23:53]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:24:13]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:24:48]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:27:02]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+[INFO ]-[SMA-NEGO-LOG: 12/09/2018 17:30:09]-(AgentControll:33)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+

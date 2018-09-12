@@ -18,9 +18,9 @@ public class Of extends JPanel {
         this.setBackground(Color.white);
         icon = new ImageIcon(getClass().getResource("/img/of.png"));
         Image img = icon.getImage();
-        Image newimg = img.getScaledInstance(20, 40,  java.awt.Image.SCALE_SMOOTH);
+        Image newimg = img.getScaledInstance(20, 20,  java.awt.Image.SCALE_SMOOTH);
         imagem = new JLabel();
-        setLocation(100, 100);        
+        setLocation(100, 100);
         setSize(100, 100);
         imagem.setIcon(new ImageIcon(newimg));
         add(imagem);

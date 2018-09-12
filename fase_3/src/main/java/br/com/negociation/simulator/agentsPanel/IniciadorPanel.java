@@ -31,7 +31,7 @@ public class IniciadorPanel extends JPanel {
         Image img = icon.getImage();
         Image newimg = img.getScaledInstance(100, 100,  java.awt.Image.SCALE_SMOOTH);
         imagem = new JLabel();
-        setLocation(20, 100);        
+        setLocation(10, 30);        
         setSize(300, 100);
         imagem.setIcon(new ImageIcon(newimg));
         add(imagem);

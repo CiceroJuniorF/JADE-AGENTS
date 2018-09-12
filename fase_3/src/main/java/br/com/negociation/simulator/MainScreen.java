@@ -23,7 +23,7 @@ public class MainScreen extends JFrame {
     /**
      * Components
      */
-    private JButton start, stop;
+    private JButton start, stop, failure;
     private JPanel controlPanel;
 
     /**
@@ -45,6 +45,7 @@ public class MainScreen extends JFrame {
         //Criando os botões
         start = new JButton("START SIMULATION");
         stop = new JButton("STOP SIMULATION");
+        failure = new JButton("Simulate Failure");
         handler = new HandlerControl(start,stop);
         JPanel panelMenu = new JPanel();
         panelMenu.setBackground(Color.white);
@@ -56,6 +57,9 @@ public class MainScreen extends JFrame {
         panelMenu.add(start);
         stop.addActionListener(handler);
         panelMenu.add(stop);
+        panelMenu.add(failure);
+        failure.addActionListener(handler);
+        panelMenu.add(failure);
         controlPanel.add(panelMenu);
         controlPanel.add(SimulatorPanel.getInstance());
     }
