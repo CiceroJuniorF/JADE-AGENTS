@@ -1,0 +1,117 @@
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:26]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:29]-(BuyerAgent:121)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:29]-(BuyerAgent:121)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:29]-(BuyerAgent:121)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:29]-(BuyerAgent:134)  -> SEND:
+Agent: buyer
+CFP CONTENT => Acucar
+ ID:Accfp1529361269975
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:31]-(MerchantAgent:53)  -> Agent merchant-dia received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529361269975
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:31]-(MerchantAgent:53)  -> Agent merchant-carrefour received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529361269975
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:31]-(MerchantAgent:53)  -> Agent merchant-extra received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529361269975
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:31]-(MerchantAgent:63)  -> Agent merchant-extra PROPOSE - > 10.00
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:31]-(MerchantAgent:63)  -> Agent merchant-carrefour PROPOSE - > 4.00
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:32]-(BuyerAgent:62)  -> REFUSE FOR: merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:35]-(BuyerAgent:70)  -> Best propose 10.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:38]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:38]-(BuyerAgent:87)  -> buyer SEND REJECT! FOR:merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:39]-(BuyerAgent:87)  -> buyer SEND REJECT! FOR:merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:39]-(BuyerAgent:99)  -> buyer SEND ACCEPT! FOR: merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:39]-(MerchantAgent:40)  -> Agent merchant-carrefour INFORM_DONE - > DONE!
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:39]-(MerchantAgent:49)  -> Agent merchant-carrefour INFORM_RESULT - > {"name":"Acucar","type":"Cristal","price":4.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 18/06/2018 19:34:45]-(BuyerAgent:108)  -> Agent buyer BUY: {"name":"Acucar","type":"Cristal","price":4.00} FROM: merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:29]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:32]-(BuyerAgent:121)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:32]-(BuyerAgent:121)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:32]-(BuyerAgent:121)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:32]-(BuyerAgent:134)  -> SEND:
+Agent: buyer
+CFP CONTENT => Acucar
+ ID:Accfp1529445272256
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:34]-(MerchantAgent:53)  -> Agent merchant-carrefour received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529445272256
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:34]-(MerchantAgent:53)  -> Agent merchant-extra received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529445272256
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:34]-(MerchantAgent:53)  -> Agent merchant-dia received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529445272256
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:34]-(MerchantAgent:63)  -> Agent merchant-extra PROPOSE - > 10.00
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:34]-(MerchantAgent:63)  -> Agent merchant-carrefour PROPOSE - > 4.00
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:35]-(BuyerAgent:62)  -> REFUSE FOR: merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:38]-(BuyerAgent:70)  -> Best propose 10.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:41]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:41]-(BuyerAgent:87)  -> buyer SEND REJECT! FOR:merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:41]-(BuyerAgent:87)  -> buyer SEND REJECT! FOR:merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:41]-(BuyerAgent:99)  -> buyer SEND ACCEPT! FOR: merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:42]-(MerchantAgent:40)  -> Agent merchant-carrefour INFORM_DONE - > DONE!
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:42]-(MerchantAgent:49)  -> Agent merchant-carrefour INFORM_RESULT - > {"name":"Acucar","type":"Cristal","price":4.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 18:54:47]-(BuyerAgent:108)  -> Agent buyer BUY: {"name":"Acucar","type":"Cristal","price":4.00} FROM: merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:36]-(AgentControll:23)  -> 
+The following agents have been created ->>>>>>>
+          |controll-agent|
+          |buyer|
+          |merchant-carrefour|
+          |merchant-extra|
+          |merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:39]-(BuyerAgent:121)  -> Add receiver => merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:39]-(BuyerAgent:121)  -> Add receiver => merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:39]-(BuyerAgent:121)  -> Add receiver => merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:39]-(BuyerAgent:134)  -> SEND:
+Agent: buyer
+CFP CONTENT => Acucar
+ ID:Accfp1529451039259
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:41]-(MerchantAgent:53)  -> Agent merchant-carrefour received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529451039259
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:41]-(MerchantAgent:53)  -> Agent merchant-dia received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529451039259
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:41]-(MerchantAgent:53)  -> Agent merchant-extra received the menssage 
+-Acucar
+FOR: buyer
+ID:Accfp1529451039259
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:42]-(MerchantAgent:63)  -> Agent merchant-extra PROPOSE - > 10.00
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:42]-(MerchantAgent:63)  -> Agent merchant-carrefour PROPOSE - > 4.00
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:42]-(BuyerAgent:62)  -> REFUSE FOR: merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:45]-(BuyerAgent:70)  -> Best propose 10.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:48]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:48]-(BuyerAgent:87)  -> buyer SEND REJECT! FOR:merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:48]-(BuyerAgent:87)  -> buyer SEND REJECT! FOR:merchant-dia
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:48]-(BuyerAgent:99)  -> buyer SEND ACCEPT! FOR: merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:49]-(MerchantAgent:40)  -> Agent merchant-carrefour INFORM_DONE - > DONE!
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:49]-(MerchantAgent:49)  -> Agent merchant-carrefour INFORM_RESULT - > {"name":"Acucar","type":"Cristal","price":4.00} 
+Order Sucess!
+[INFO ]-[SMA-NEGO-LOG: 19/06/2018 20:30:54]-(BuyerAgent:108)  -> Agent buyer BUY: {"name":"Acucar","type":"Cristal","price":4.00} FROM: merchant-carrefour

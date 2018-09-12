@@ -1,2 +1,6 @@
-# SMA---TCC
-Este é um exemplo basico de conversa entre 2 agentes de forma autonoma, contando com um dicionário onde os agentes buscam suas frases e repostas.
+### Trabalho de Conclusão de Curso - UNASP-SP
+
+Objetivo final:\
+Desenvolver um simulador de uma smart grid gerenciada por agentes inteligentes.
+
+>Cícero Junior;

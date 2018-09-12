@@ -1,0 +1,1193 @@
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:00]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517378895  :conversation-id  Accfp1536517378895 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:01]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517380320  :in-reply-to  cfp1536517378895  :conversation-id  Accfp1536517378895 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:01]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:04]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517380320  :in-reply-to  cfp1536517378895  :conversation-id  Accfp1536517378895 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:07]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517380320  :in-reply-to  cfp1536517378895  :conversation-id  Accfp1536517378895 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:07]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517387968  :conversation-id  Accfp1536517387968 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:07]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517387968  :conversation-id  Accfp1536517387968 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:07]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517387984  :conversation-id  Accfp1536517387984 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:10]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517388013  :in-reply-to  cfp1536517387984  :conversation-id  Accfp1536517387984 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:23:14]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517388013  :in-reply-to  cfp1536517387984  :conversation-id  Accfp1536517387984 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:31]-(AgentControll:30)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:34]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:36]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:36]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:36]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:37]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517536162  :in-reply-to  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:40]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517536166  :in-reply-to  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:40]-(BuyerAgent:70)  -> Best propose 10.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:43]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517536162  :in-reply-to  cfp1536517534670  :conversation-id  Accfp1536517534670 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:43]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:43]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517543742  :conversation-id  Accfp1536517543742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:43]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517543750  :conversation-id  Accfp1536517543750 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:43]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517543762  :conversation-id  Accfp1536517543762 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:46]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517543874  :in-reply-to  cfp1536517543762  :conversation-id  Accfp1536517543762 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:25:49]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517543874  :in-reply-to  cfp1536517543762  :conversation-id  Accfp1536517543762 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:14]-(AgentControll:30)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:16]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:18]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:18]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:18]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:19]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517638394  :in-reply-to  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:22]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517638394  :in-reply-to  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:22]-(BuyerAgent:70)  -> Best propose 10.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:25]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517638398  :in-reply-to  cfp1536517636890  :conversation-id  Accfp1536517636890 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:25]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:25]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517645978  :conversation-id  Accfp1536517645978 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:25]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517645982  :conversation-id  Accfp1536517645982 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:25]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536517645990  :conversation-id  Accfp1536517645990 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:29]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517646026  :in-reply-to  cfp1536517645990  :conversation-id  Accfp1536517645990 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:27:32]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536517646026  :in-reply-to  cfp1536517645990  :conversation-id  Accfp1536517645990 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:58:53]-(AgentControll:30)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:58:56]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:58:58]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:58:58]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:58:58]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:58:59]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519537838  :in-reply-to  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:02]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519537842  :in-reply-to  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:02]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:05]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519537838  :in-reply-to  cfp1536519536358  :conversation-id  Accfp1536519536358 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:05]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519545458  :conversation-id  Accfp1536519545458 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:05]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519545466  :conversation-id  Accfp1536519545466 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:05]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519545490  :conversation-id  Accfp1536519545490 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:08]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519545614  :in-reply-to  cfp1536519545490  :conversation-id  Accfp1536519545490 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 15:59:11]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519545614  :in-reply-to  cfp1536519545490  :conversation-id  Accfp1536519545490 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:21]-(AgentControll:30)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:24]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:26]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:26]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:26]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:27]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519626153  :in-reply-to  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:30]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519626157  :in-reply-to  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:30]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:33]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519626149  :in-reply-to  cfp1536519624649  :conversation-id  Accfp1536519624649 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:33]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519633701  :conversation-id  Accfp1536519633701 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:33]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519633741  :conversation-id  Accfp1536519633741 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:33]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519633745  :conversation-id  Accfp1536519633745 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:36]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519633813  :in-reply-to  cfp1536519633745  :conversation-id  Accfp1536519633745 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:00:39]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519633813  :in-reply-to  cfp1536519633745  :conversation-id  Accfp1536519633745 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:01:57]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:00]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:02]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:02]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:02]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:03]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519722006  :in-reply-to  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:06]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519722010  :in-reply-to  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:06]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:09]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519722002  :in-reply-to  cfp1536519720502  :conversation-id  Accfp1536519720502 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:09]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519729594  :conversation-id  Accfp1536519729594 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:09]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519729606  :conversation-id  Accfp1536519729606 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:09]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519729610  :conversation-id  Accfp1536519729610 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:12]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519729658  :in-reply-to  cfp1536519729610  :conversation-id  Accfp1536519729610 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:02:15]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519729658  :in-reply-to  cfp1536519729610  :conversation-id  Accfp1536519729610 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:03:15]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:03:18]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519798452  :conversation-id  Accfp1536519798452 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:03:59]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:02]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:04]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:04]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:04]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:05]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519844062  :in-reply-to  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:08]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519844062  :in-reply-to  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:08]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:11]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519844062  :in-reply-to  cfp1536519842558  :conversation-id  Accfp1536519842558 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:11]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519851622  :conversation-id  Accfp1536519851622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:11]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519851634  :conversation-id  Accfp1536519851634 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:11]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519851646  :conversation-id  Accfp1536519851646 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:14]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519851666  :in-reply-to  cfp1536519851646  :conversation-id  Accfp1536519851646 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:17]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519851666  :in-reply-to  cfp1536519851646  :conversation-id  Accfp1536519851646 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:27]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:30]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:31]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:31]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:31]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:33]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519871821  :in-reply-to  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:36]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519871825  :in-reply-to  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:36]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:39]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519871821  :in-reply-to  cfp1536519870317  :conversation-id  Accfp1536519870317 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:39]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519879417  :conversation-id  Accfp1536519879417 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:39]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519879429  :conversation-id  Accfp1536519879429 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:39]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519879437  :conversation-id  Accfp1536519879437 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:42]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519879457  :in-reply-to  cfp1536519879437  :conversation-id  Accfp1536519879437 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:04:45]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519879457  :in-reply-to  cfp1536519879437  :conversation-id  Accfp1536519879437 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:24]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:27]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:28]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:28]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:28]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:30]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519928552  :in-reply-to  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:33]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519928548  :in-reply-to  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:33]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:36]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536519928548  :in-reply-to  cfp1536519927056  :conversation-id  Accfp1536519927056 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:36]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519936128  :conversation-id  Accfp1536519936128 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:36]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519936144  :conversation-id  Accfp1536519936144 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:36]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536519936148  :conversation-id  Accfp1536519936148 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:05:45]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:30]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:33]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:36]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521015306  :in-reply-to  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:39]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521015306  :in-reply-to  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:39]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:42]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521015306  :in-reply-to  cfp1536521013810  :conversation-id  Accfp1536521013810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:42]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521022866  :conversation-id  Accfp1536521022866 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:42]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521022870  :conversation-id  Accfp1536521022870 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:42]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521022874  :conversation-id  Accfp1536521022874 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:45]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521022982  :in-reply-to  cfp1536521022874  :conversation-id  Accfp1536521022874 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:23:48]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521022982  :in-reply-to  cfp1536521022874  :conversation-id  Accfp1536521022874 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:38]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:41]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:42]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:42]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:42]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:44]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521202869  :in-reply-to  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:47]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521202869  :in-reply-to  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:47]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:50]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521202853  :in-reply-to  cfp1536521201367  :conversation-id  Accfp1536521201367 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:50]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521210421  :conversation-id  Accfp1536521210421 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:50]-(BuyerAgent:89)  -> SEND REJECT: (REJECT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521210421  :conversation-id  Accfp1536521210421 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:50]-(BuyerAgent:102)  -> SEND ACCEPT: (ACCEPT-PROPOSAL
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521210436  :conversation-id  Accfp1536521210436 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:53]-(BuyerAgent:118)  -> INFORM DONE:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "DONE!" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521210520  :in-reply-to  cfp1536521210436  :conversation-id  Accfp1536521210436 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:26:56]-(BuyerAgent:115)  -> INFORM RESULT:(INFORM
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "{\"name\":\"Acucar\",\"type\":\"Cristal\",\"price\":4.00}" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521210520  :in-reply-to  cfp1536521210436  :conversation-id  Accfp1536521210436 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:27:56]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:27:59]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:01]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:01]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:01]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:02]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521281146  :in-reply-to  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:02]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:05]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521281146  :in-reply-to  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:08]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521281146  :in-reply-to  cfp1536521279618  :conversation-id  Accfp1536521279618 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:11]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:11]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:11]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:11]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:14]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521291774  :in-reply-to  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:17]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521291782  :in-reply-to  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:20]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521291778  :in-reply-to  cfp1536521291742  :conversation-id  Accfp1536521291742 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:23]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:25]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:25]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:25]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:26]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521305322  :in-reply-to  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:29]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521305337  :in-reply-to  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:32]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521305337  :in-reply-to  cfp1536521303830  :conversation-id  Accfp1536521303830 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:35]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:37]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:37]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:37]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:38]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521317372  :in-reply-to  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:41]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521317376  :in-reply-to  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:44]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521317392  :in-reply-to  cfp1536521315904  :conversation-id  Accfp1536521315904 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:48]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:49]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:49]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:49]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:51]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521329441  :in-reply-to  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:54]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521329473  :in-reply-to  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:28:57]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521329505  :in-reply-to  cfp1536521328001  :conversation-id  Accfp1536521328001 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:00]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:01]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:01]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:01]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:03]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521341476  :in-reply-to  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:06]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521341539  :in-reply-to  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:09]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521341554  :in-reply-to  cfp1536521340072  :conversation-id  Accfp1536521340072 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:20]-(AgentControll:31)  -> 
+The following agents have been created ->>>>>>>
+
+|controll-agent|
+
+|buyer|
+
+|merchant-carrefour|
+
+|merchant-extra|
+
+|merchant-dia|
+
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:23]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:25]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:25]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:25]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:26]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521364935  :in-reply-to  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:26]-(BuyerAgent:70)  -> Best propose 10.00 from merchant-extra
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:29]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521364950  :in-reply-to  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:29]-(BuyerAgent:70)  -> Best propose 4.00 from merchant-carrefour
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:32]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521364935  :in-reply-to  cfp1536521363428  :conversation-id  Accfp1536521363428 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:35]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:38]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521375654  :in-reply-to  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:41]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521375670  :in-reply-to  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:44]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521375674  :in-reply-to  cfp1536521375491  :conversation-id  Accfp1536521375491 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:47]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:47]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:47]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:47]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:50]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521387678  :in-reply-to  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:53]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521387698  :in-reply-to  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:56]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521387710  :in-reply-to  cfp1536521387548  :conversation-id  Accfp1536521387548 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:59]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:59]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:59]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:29:59]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:02]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521399717  :in-reply-to  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:05]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521399748  :in-reply-to  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:08]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521399764  :in-reply-to  cfp1536521399622  :conversation-id  Accfp1536521399622 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:11]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:11]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:11]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:11]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:14]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521411786  :in-reply-to  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:17]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521411848  :in-reply-to  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:20]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521411848  :in-reply-to  cfp1536521411691  :conversation-id  Accfp1536521411691 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:23]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:23]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:23]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:23]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:26]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "4.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521423827  :in-reply-to  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:29]-(BuyerAgent:61)  -> REFUSE: (REFUSE
+ :sender  ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521423894  :in-reply-to  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:32]-(BuyerAgent:66)  -> PROPOSE: (PROPOSE
+ :sender  ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc )) )
+ :content  "10.00" 
+ :reply-with  buyer@172.26.75.113:10099/JADE1536521423910  :in-reply-to  cfp1536521423744  :conversation-id  Accfp1536521423744 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:35]-(BuyerAgent:142)  -> CFP: (CFP
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521435810  :conversation-id  Accfp1536521435810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521435810  :conversation-id  Accfp1536521435810 )
+[INFO ]-[SMA-NEGO-LOG: 09/09/2018 16:30:35]-(MerchantAgent:56)  -> CFP RECEIVE:(CFP
+ :sender  ( agent-identifier :name buyer@172.26.75.113:10099/JADE  :addresses (sequence http://CENW10N09270:7778/acc ))
+ :receiver  (set ( agent-identifier :name merchant-carrefour@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-extra@172.26.75.113:10099/JADE ) ( agent-identifier :name merchant-dia@172.26.75.113:10099/JADE ) )
+ :content  "Acucar" 
+ :reply-with  cfp1536521435810  :conversation-id  Accfp1536521435810 )
