@@ -2,6 +2,7 @@ package br.com.smartgrid.simulator.agentsPanel;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.Graphics;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
@@ -22,16 +23,16 @@ public class IniciadorPanel extends JPanel {
 
     private JPanel status = new Of();
 
-    public IniciadorPanel() {        
+    public IniciadorPanel() {
         ImageIcon icon;
         JLabel imagem;
         this.setBackground(Color.white);
         this.setLayout(new FlowLayout());
         icon = new ImageIcon(getClass().getResource("/img/hidreletrica.png"));
         Image img = icon.getImage();
-        Image newimg = img.getScaledInstance(100, 100,  java.awt.Image.SCALE_SMOOTH);
+        Image newimg = img.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
         imagem = new JLabel();
-        setLocation(10, 30);        
+        setLocation(10, 30);
         setSize(300, 100);
         imagem.setIcon(new ImageIcon(newimg));
         add(imagem);
@@ -46,16 +47,22 @@ public class IniciadorPanel extends JPanel {
         }
     }
 
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
 
-    public JPanel getStatus(){
+        g.drawLine(0, 250, 250, 250);
+
+    }
+
+    public JPanel getStatus() {
         return status;
     }
 
-    public void alterStatus(){
+    public void alterStatus() {
         this.remove(status);
-        if(this.status instanceof On){
+        if (this.status instanceof On) {
             this.status = new Of();
-        }else{
+        } else {
             this.status = new On();
         }
         this.add(status);
