@@ -20,10 +20,10 @@ public class Main {
         System.out.println("HELLO WOLRD!");
 
         // Cria o Arquivo
-        File file1 = new File("C:\\Projects\\STUDY\\datamining\\arquivos", "\\Dados - FINALLY.arff");
+        File file1 = new File("..\\arquivos", "\\Dados - FINALLY.arff");
 
         BufferedReader br = new BufferedReader(
-                new FileReader("C:\\Projects\\STUDY\\datamining\\arquivos\\Dados - Brutos.arff"));
+                new FileReader("..\\arquivos\\Dados - Brutos.arff"));
         // Começa a leitura do arquivo.
         List<Attributes> atributos = new ArrayList<>();
         List<String[]> allLinhas = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Main {
             System.out.println("Lendo Nova Linha!");
             if (linha.isEmpty()) {
 
-            } else {
+            } else {               
                 if (linha.contains("@")) {
                     if (linha.contains("@relation")) {
                         System.out.println("Relação Encontrada: "+linha);
@@ -55,9 +55,10 @@ public class Main {
                     String[] linhaPreFormatada = linha.split(";",-1); 
                     
                     for (int x =0;linhaFormatada.length > x; x++) {
+                        
                         if(x > linhaPreFormatada.length-1){
                             linhaFormatada[x] = "";
-                        }else{
+                        }else{                           
                             linhaFormatada[x] = linhaPreFormatada[x];
                         }   
                     }                                   
@@ -68,8 +69,8 @@ public class Main {
                         if (atributo.type.equals("string")) {
                             if(item.isEmpty()){
                                 item = "\"\"";
-                            }else{
-                             item = "'" + item + "'";
+                            }else{                             
+                             item = "\"" + item + "\"";
                             }
                         }
                         atributo.verifyAndAddValue(item);                        
