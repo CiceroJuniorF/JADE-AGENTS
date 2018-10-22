@@ -8,22 +8,28 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner; 
 
-import br.com.datamining.Model.Attributes;
-
-/**
- * Main
- */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        System.out.println("HELLO WOLRD!");
+    public static void main(String[] args) throws IOException {      
+				Scanner sc = new Scanner(System.in); 
+				System.out.println("Digite o caminho e o nome do arquivo em estado bruto sem a extensão:");				
+				String name = sc.nextLine();
+				if(name.contains("/")){
+					name.replace("/","//");  
+				}
+				BufferedReader br = new BufferedReader(
+							new FileReader(name+".arff"));
 
-        // Cria o Arquivo
-        File file1 = new File("..\\arquivos", "\\Dados - FINALLY.arff");
+				System.out.println("Digite o caminho e o nome do arquivo para destino sem a extensão:");
+				name = sc.nextLine();
+				if(name.contains("/")){
+					name.replace("/","//");  
+				}
+				File file1 = new File(name+".arff");       
 
-        BufferedReader br = new BufferedReader(
-                new FileReader("..\\arquivos\\Dados - Brutos.arff"));
+        
         // Começa a leitura do arquivo.
         List<Attributes> atributos = new ArrayList<>();
         List<String[]> allLinhas = new ArrayList<>();
