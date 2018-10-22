@@ -12,7 +12,12 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {      
+    public static void main(String[] args) throws IOException {
+				System.out.println("======================================================================");
+				System.out.println("Obs: \tO arquivo de origem não deve conter numero diferente de colunas," 
+														+"caso houver colunas faltantes,"
+														+"\n\tSEPARE MESMO ASSIM POR PONTO E VIRGULA.");
+				System.out.println("======================================================================\n\n\n\n");      
 				Scanner sc = new Scanner(System.in); 
 				System.out.println("Digite o caminho e o nome do arquivo em estado bruto sem a extensão:");				
 				String name = sc.nextLine();
